@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let billingAmount = parseInt(prompt("Enter billing amount"))
+        let customerPaidAmount = parseInt(prompt("Enter Customer paid Amount"))
+
+        if (billingAmount > customerPaidAmount) {
+            let TakeMoreAmount = billingAmount - customerPaidAmount
+
+            document.write("Please pay more :" + TakeMoreAmount)
+
+        } else if (billingAmount < customerPaidAmount) {
+            let returnAmount = billingAmount - customerPaidAmount
+
+            document.write("Return remaining amount :" + returnAmount)
+        } else {
+            document.write("Thanks for visit")
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        let billingAmount = parseInt(prompt("Enter billing amount"))
+        let customerPaidAmount = parseInt(prompt("Enter Customer paid Amount"))
+
+        if (customerPaidAmount > billingAmount) {
+            let returnAmount = customerPaidAmount - billingAmount;
+
+            document.write("Return remaining amount : " + returnAmount)
+
+            let note500 = parseInt(returnAmount / 500)
+            returnAmount = returnAmount % 500;
+
+            let note200 = parseInt(returnAmount / 200)
+            returnAmount = returnAmount % 200;
+
+            let note100 = parseInt(returnAmount / 100)
+            returnAmount = returnAmount % 100;
+
+            let note50 = parseInt(returnAmount / 50)
+            returnAmount = returnAmount % 50;
+
+            let note20 = parseInt(returnAmount / 20)
+            returnAmount = returnAmount % 20;
+
+            let note10 = parseInt(returnAmount / 10)
+            returnAmount = returnAmount % 10;
+
+            let note5 = parseInt(returnAmount / 5)
+            returnAmount = returnAmount % 5;
+
+            let note2 = parseInt(returnAmount / 2)
+            returnAmount = returnAmount % 2;
+
+            let note1 = parseInt(returnAmount / 1)
+            returnAmount = returnAmount % 1;
+
+            
+            document.write("<br>");
+            if (note500 > 0) {
+                document.write("Rs.500= :" + note500 + "<br>")
+            }
+            if (note200 > 0) {
+                document.write("Rs.200= :" + note200 + "<br>")
+            }
+            if (note100 > 0) {
+                document.write("Rs.100= :" + note100 + "<br>")
+            }
+            if (note50 > 0) {
+                document.write("Rs.50= :" + note50 + "<br>")
+            }
+            if (note20 > 0) {
+                document.write("Rs.20= :" + note20 + "<br>")
+            }
+            if (note10 > 0) {
+                document.write("Rs.10= :" + note10 + "<br>")
+            }
+            if (note5 > 0) {
+                document.write("Rs.5= :" + note5 + "<br>")
+            }
+            if (note2 > 0) {
+                document.write("Rs.2= :" + note2 + "<br>")
+            }
+            if (note1 > 0) {
+                document.write("Rs.1= :" + note1 + "<br>")
+            }
+
+
+        } else if (customerPaidAmount < billingAmount) {
+            let TakeMoreAmount = customerPaidAmount - billingAmount;
+
+            document.write("please pay more " + TakeMoreAmount)
+        } else {
+            document.write("Thanks for visit")
+        }
+
+    </script>
+
+</body>
+
+</html>
