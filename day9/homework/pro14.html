@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let team1 = parseInt(prompt("Enter first team :"))
+        let team2 = parseInt(prompt("Enter second team :"))
+        let team3 = parseInt(prompt("Enter third team :"))
+        let team4 = parseInt(prompt("Enter fourth team :"))
+        let team5 = parseInt(prompt("Enter fifth team :"))
+
+
+
+
+        if (team1 > team2) {
+            if (team1 > team3) {
+                if (team1 > team4) {
+                    if (team1 > team5) {
+                        document.write("team 1 won ")
+                    } else {
+                        document.write("team 5 wons")
+                    }
+
+                } else {
+                    if (team4 > team5) {
+                        document.write("team 4 won ")
+
+                    } else {
+                        document.write("team 5 wons")
+
+                    }
+                }
+            } else {
+
+                if (team3 > team4) {
+                    if (team3 > team5) {
+                        document.write("team 3 wons")
+                    } else {
+                        document.write("team 5 wons")
+                    }
+                } else {
+                    if (team4 > team5) {
+                        document.write("team 4 wins")
+                    } else {
+
+                    }
+                    document.write("team 5 wons")
+
+                }
+
+            }
+
+        } else {
+            if (team2 > team3) {
+                if (team2 > team4) {
+                    if (team2 > team5) {
+                        document.write("team2 wons")
+                    } else {
+                        document.write("team 5 wons ")
+
+                    }
+
+                } else {
+                    if (team4 > team5) {
+                        document.write("team 4 wins")
+                    } else {
+                        document.write("team 5 wons")
+                    }
+                }
+            } else {
+                if (team3 > team4) {
+                    if (team3 > team5) {
+                        document.write("team 3 wins")
+
+                    } else {
+                        document.write("team5 wons")
+
+                    }
+
+
+                } else {
+                    if (team4 > team5) {
+                        document.write("team4 wins")
+                    } else {
+                        document.write("team 5 wins")
+                    }
+
+                }
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>
