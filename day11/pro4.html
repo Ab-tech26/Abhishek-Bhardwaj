@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let start = parseInt(prompt("Enter start number : "))
+        let end = parseInt(prompt("Enter end number : "))
+
+        if (start > end) {
+            let temp = start;
+            start = end;
+            end = temp;
+
+        }
+
+        let sum = 0;
+        for (let i = start; i <= end; i++) {
+            sum = sum + i
+
+        }
+        document.write(sum)
+
+    </script>
+
+
+
+</body>
+
+</html>
