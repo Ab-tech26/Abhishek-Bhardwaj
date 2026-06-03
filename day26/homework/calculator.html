@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div >First number <input type="first number" id="firstID"></div>
+    <div >Second number <input type="second number" id = "secondID"></div>
+    <div><button id="button1">addition</button></div>
+    <div><button id="button2">substraction</button></div>
+    <div><button id="button3">devision</button></div>
+    <div><button id="button4">multiplication</button></div>
+    <br><br>
+    <div >Result<input type="result" id="resultID"></div>
+    
+
+   <script>
+    document.getElementById("button1").addEventListener("click",()=>{
+        let first= document.getElementById("firstID").value;
+        let second= document.getElementById('secondID').value
+        let result = parseInt(first) + parseInt(second)
+        document.getElementById("resultID").value = result;
+    })
+        document.getElementById("button2").addEventListener("click",()=>{
+        let first= document.getElementById("firstID").value;
+        let second= document.getElementById('secondID').value
+        let result = parseInt(first) - parseInt(second)
+        document.getElementById("resultID").value = result;
+    })
+        document.getElementById("button3").addEventListener("click",()=>{
+        let first= document.getElementById("firstID").value;
+        let second= document.getElementById('secondID').value
+        let result = parseInt(first) / parseInt(second)
+        document.getElementById("resultID").value = result;
+    })
+
+        document.getElementById("button4").addEventListener("click",()=>{
+        let first= document.getElementById("firstID").value;
+        let second= document.getElementById('secondID').value
+        let result = parseInt(first) * parseInt(second)
+        document.getElementById("resultID").value = result;
+    })
+
+
+
+
+
+   </script>
+</body>
+</html>
