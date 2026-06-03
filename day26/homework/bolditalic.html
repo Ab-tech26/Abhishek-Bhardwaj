@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 2px solid red
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+   <div class="box" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis perferendis sequi deleniti quasi aliquid hic possimus assumenda dicta. Dolorum architecto esse porro fugit enim sit vitae dignissimos accusamus incidunt voluptatum!</div>
+    <button id = "boldbtn">BOLD</button>
+    <button id = "italic1">ITALIC</button>
+
+
+    <script>
+        document.getElementById('boldbtn').addEventListener('click', ()=>{
+            document.getElementById('box1').style.fontWeight='bold';
+        })
+        document.getElementById('italic1').addEventListener('click', ()=>{
+            document.getElementById('box1').style.fontStyle = "italic";
+        })
+    
+    
+        
+    </script>
+</body>
+</html>

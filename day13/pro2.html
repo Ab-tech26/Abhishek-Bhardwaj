@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            border: 2px solid black;
+            border-radius: 20px;
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+            background-color: orange;
+            box-shadow: 5px 5px 5px black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- This is where new card will be added -->
+    <div id="container"></div>
+
+    <button onclick="cardid()">Create Card</button>
+
+    <script>
+        function cardid() {
+
+            let boxstring =
+                '<div class="box">' +
+                '<h2>Heading two</h2>' +
+                '<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam eligendi temporibus harum consectetur pariatur quae veritatis tenetur sunt saepe cum ullam fugiat officia distinctio molestiae quod a, cumque tempora magni.</p>' +
+                '</div>';
+
+            document.getElementById("container").innerHTML = boxstring;
+        }
+    </script>
+
+</body>
+</html>

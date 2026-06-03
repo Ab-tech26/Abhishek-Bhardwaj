@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="countryID"></div>
+    <button onclick="addcountriesList()">Click here</button>
+
+    <br><br>
+
+    <div id="empdata"></div>
+    <button onclick="empdata()">forEmp Data</button>
+
+    <script>
+        function addcountriesList() {
+            let elementstring =
+                '<img src="399-SM1111919.jpg" alt="" width="200">';
+            document.getElementById('countryID').innerHTML = elementstring;
+        }
+    </script>
+
+    <script>
+        function empdata() {
+            let elementstring =
+                '<table border="1">' +
+                '<tr><td>Name</td><td>Id</td><td>Designation</td></tr>' +
+                '<tr><td>Punit</td><td>400</td><td>Sr. Engg</td></tr>' +
+                '</table>';
+
+            document.getElementById('empdata').innerHTML = elementstring;
+        }
+    </script>
+
+</body>
+
+</html>
